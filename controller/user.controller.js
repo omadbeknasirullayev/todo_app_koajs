@@ -63,7 +63,7 @@ const login = async (ctx) => {
 }
 
 const logout = async (ctx) => {
-    try {
+    try { 
         const id = ctx.params.id
         const user = await User.findOne({where: {id}})
         if (!user) {
